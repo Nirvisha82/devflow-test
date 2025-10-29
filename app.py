@@ -10,8 +10,8 @@ def prompt_number(label: str) -> float:
 def main() -> None:
     calc = Calculator()
 
-    print("Simple OOP Calculator (Add & Subtract)")
-    print("======================================")
+    print("Simple OOP Calculator (Add, Subtract & Divide)")
+    print("==============================================")
 
     while True:
         print("\nOptions:")
@@ -34,8 +34,19 @@ def main() -> None:
         try:
             result = calc.compute(choice, a, b)
             op_name = calc.menu_items[choice].name
-            symbol = "+" if op_name == "Add" else "-"
+            # Determine the symbol for display based on the operation name
+            if op_name == "Add":
+                symbol = "+"
+            elif op_name == "Subtract":
+                symbol = "-"
+            elif op_name == "Divide":
+                symbol = "/"
+            else:
+                symbol = "?" # Fallback for unknown operations
+
             print(f"Result: {a} {symbol} {b} = {result}")
+        except ZeroDivisionError as e: # Catch specific division by zero error
+            print(f"Error: {e}")
         except Exception as e:
             print(f"Error: {e}")
 
