@@ -1,0 +1,197 @@
+[
+  {
+    "Path": "temp_repo_Nirvisha82_devflow-test_1761235196/.gitignore",
+    "RelativePath": ".gitignore",
+    "Size": 4688,
+    "Language": "",
+    "Functions": null,
+    "Classes": null,
+    "Imports": null,
+    "Exports": null,
+    "Purpose": "",
+    "Role": ""
+  },
+  {
+    "Path": "temp_repo_Nirvisha82_devflow-test_1761235196/README.md",
+    "RelativePath": "README.md",
+    "Size": 136,
+    "Language": "markdown",
+    "Functions": null,
+    "Classes": null,
+    "Imports": null,
+    "Exports": null,
+    "Purpose": "",
+    "Role": ""
+  },
+  {
+    "Path": "temp_repo_Nirvisha82_devflow-test_1761235196/app.py",
+    "RelativePath": "app.py",
+    "Size": 1241,
+    "Language": "python",
+    "Functions": [
+      {
+        "Name": "prompt_number",
+        "Signature": "def prompt_number(label: str) -\u003e float:",
+        "Purpose": "",
+        "Parameters": null,
+        "ReturnType": "",
+        "LineNumber": 3
+      },
+      {
+        "Name": "main",
+        "Signature": "def main() -\u003e None:",
+        "Purpose": "",
+        "Parameters": null,
+        "ReturnType": "",
+        "LineNumber": 10
+      }
+    ],
+    "Classes": null,
+    "Imports": [
+      "Calculator"
+    ],
+    "Exports": null,
+    "Purpose": "",
+    "Role": ""
+  },
+  {
+    "Path": "temp_repo_Nirvisha82_devflow-test_1761235196/calculator/__init__.py",
+    "RelativePath": "calculator/__init__.py",
+    "Size": 142,
+    "Language": "python",
+    "Functions": null,
+    "Classes": null,
+    "Imports": [
+      "Calculator",
+      "Operation,"
+    ],
+    "Exports": null,
+    "Purpose": "",
+    "Role": ""
+  },
+  {
+    "Path": "temp_repo_Nirvisha82_devflow-test_1761235196/calculator/calculator.py",
+    "RelativePath": "calculator/calculator.py",
+    "Size": 940,
+    "Language": "python",
+    "Functions": [
+      {
+        "Name": "__init__",
+        "Signature": "def __init__(self) -\u003e None:",
+        "Purpose": "",
+        "Parameters": null,
+        "ReturnType": "",
+        "LineNumber": 9
+      },
+      {
+        "Name": "_register_default_operations",
+        "Signature": "def _register_default_operations(self) -\u003e None:",
+        "Purpose": "",
+        "Parameters": null,
+        "ReturnType": "",
+        "LineNumber": 13
+      },
+      {
+        "Name": "register_operation",
+        "Signature": "def register_operation(self, key: str, operation: Operation) -\u003e None:",
+        "Purpose": "",
+        "Parameters": null,
+        "ReturnType": "",
+        "LineNumber": 17
+      },
+      {
+        "Name": "menu_items",
+        "Signature": "def menu_items(self) -\u003e Dict[str, Operation]:",
+        "Purpose": "",
+        "Parameters": null,
+        "ReturnType": "",
+        "LineNumber": 21
+      },
+      {
+        "Name": "compute",
+        "Signature": "def compute(self, key: str, a: float, b: float) -\u003e float:",
+        "Purpose": "",
+        "Parameters": null,
+        "ReturnType": "",
+        "LineNumber": 24
+      }
+    ],
+    "Classes": [
+      {
+        "Name": "Calculator:",
+        "Purpose": "",
+        "Methods": null,
+        "Properties": null,
+        "LineNumber": 4
+      }
+    ],
+    "Imports": [
+      "Dict,",
+      "Operation,"
+    ],
+    "Exports": null,
+    "Purpose": "",
+    "Role": ""
+  },
+  {
+    "Path": "temp_repo_Nirvisha82_devflow-test_1761235196/calculator/operations.py",
+    "RelativePath": "calculator/operations.py",
+    "Size": 396,
+    "Language": "python",
+    "Functions": [
+      {
+        "Name": "execute",
+        "Signature": "def execute(self, a: float, b: float) -\u003e float:",
+        "Purpose": "",
+        "Parameters": null,
+        "ReturnType": "",
+        "LineNumber": 7
+      },
+      {
+        "Name": "execute",
+        "Signature": "def execute(self, a: float, b: float) -\u003e float:",
+        "Purpose": "",
+        "Parameters": null,
+        "ReturnType": "",
+        "LineNumber": 13
+      },
+      {
+        "Name": "execute",
+        "Signature": "def execute(self, a: float, b: float) -\u003e float:",
+        "Purpose": "",
+        "Parameters": null,
+        "ReturnType": "",
+        "LineNumber": 19
+      }
+    ],
+    "Classes": [
+      {
+        "Name": "Operation",
+        "Purpose": "",
+        "Methods": null,
+        "Properties": null,
+        "LineNumber": 3
+      },
+      {
+        "Name": "Add",
+        "Purpose": "",
+        "Methods": null,
+        "Properties": null,
+        "LineNumber": 10
+      },
+      {
+        "Name": "Subtract",
+        "Purpose": "",
+        "Methods": null,
+        "Properties": null,
+        "LineNumber": 16
+      }
+    ],
+    "Imports": [
+      "ABC,"
+    ],
+    "Exports": null,
+    "Purpose": "",
+    "Role": ""
+  }
+]
