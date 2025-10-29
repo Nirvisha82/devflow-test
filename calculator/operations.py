@@ -18,3 +18,10 @@ class Subtract(Operation):
 
     def execute(self, a: float, b: float) -> float:
         return a - b
+
+# New Multiplication operation
+class Multiply(Operation):
+    name = "Multiply"
+
+    def execute(self, a: float, b: float) -> float:
+        return a * b
