@@ -1,4 +1,4 @@
-from calculator import Calculator
+from calculator import Calculator, Operation
 
 def prompt_number(label: str) -> float:
     while True:
@@ -10,8 +10,8 @@ def prompt_number(label: str) -> float:
 def main() -> None:
     calc = Calculator()
 
-    print("Simple OOP Calculator (Add & Subtract)")
-    print("======================================")
+    print("Simple OOP Calculator (Add, Subtract, Cube)")
+    print("===========================================")
 
     while True:
         print("\nOptions:")
@@ -28,14 +28,27 @@ def main() -> None:
             print("Invalid choice! Try again.")
             continue
 
-        a = prompt_number("first")
-        b = prompt_number("second")
+        selected_op: Operation = calc.menu_items[choice] # Get the selected operation object
+
+        a: float
+        b: float
+
+        if selected_op.is_unary:
+            a = prompt_number("number") # For unary operations, only one number is needed
+            b = 0.0 # A dummy value for 'b', as unary operations ignore it
+        else:
+            a = prompt_number("first")
+            b = prompt_number("second")
 
         try:
             result = calc.compute(choice, a, b)
-            op_name = calc.menu_items[choice].name
-            symbol = "+" if op_name == "Add" else "-"
-            print(f"Result: {a} {symbol} {b} = {result}")
+            
+            if selected_op.is_unary:
+                print(f"Result: {selected_op.name}({a}) = {result}")
+            else:
+                # Original logic for binary operations
+                symbol = "+" if selected_op.name == "Add" else "-"
+                print(f"Result: {a} {symbol} {b} = {result}")
         except Exception as e:
             print(f"Error: {e}")
 
