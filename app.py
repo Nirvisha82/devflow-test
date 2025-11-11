@@ -10,8 +10,8 @@ def prompt_number(label: str) -> float:
 def main() -> None:
     calc = Calculator()
 
-    print("Simple OOP Calculator (Add & Subtract)")
-    print("======================================")
+    print("Simple OOP Calculator (Add, Subtract & Square)")
+    print("=============================================")
 
     while True:
         print("\nOptions:")
@@ -29,15 +29,24 @@ def main() -> None:
             continue
 
         a = prompt_number("first")
-        b = prompt_number("second")
-
-        try:
-            result = calc.compute(choice, a, b)
-            op_name = calc.menu_items[choice].name
-            symbol = "+" if op_name == "Add" else "-"
-            print(f"Result: {a} {symbol} {b} = {result}")
-        except Exception as e:
-            print(f"Error: {e}")
+        
+        op_name = calc.menu_items[choice].name
+        if op_name == "Square":
+            # For Square operation, we only need one number
+            try:
+                result = calc.compute(choice, a, 0)
+                print(f"Result: {a}² = {result}")
+            except Exception as e:
+                print(f"Error: {e}")
+        else:
+            # For binary operations (Add, Subtract), we need two numbers
+            b = prompt_number("second")
+            try:
+                result = calc.compute(choice, a, b)
+                symbol = "+" if op_name == "Add" else "-"
+                print(f"Result: {a} {symbol} {b} = {result}")
+            except Exception as e:
+                print(f"Error: {e}")
 
 if __name__ == "__main__":
     main()
