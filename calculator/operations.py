@@ -18,3 +18,9 @@ class Subtract(Operation):
 
     def execute(self, a: float, b: float) -> float:
         return a - b
+
+class Cube(Operation):
+    name = "Cube"
+
+    def execute(self, a: float, b: float) -> float:
+        return a ** 3 + b ** 3
