@@ -30,3 +30,9 @@ class Multiply(Operation):
 
     def execute(self, a: float, b: float) -> float:
         return a * b
+
+class Square(Operation):
+    name = "Square"
+
+    def execute(self, a: float, b: float) -> float:
+        return a * a + b * b
