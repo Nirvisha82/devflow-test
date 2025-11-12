@@ -10,7 +10,7 @@ def prompt_number(label: str) -> float:
 def main() -> None:
     calc = Calculator()
 
-    print("Simple OOP Calculator (Add & Subtract)")
+    print("Simple OOP Calculator (Add, Subtract & Divide)")
     print("======================================")
 
     while True:
@@ -34,7 +34,7 @@ def main() -> None:
         try:
             result = calc.compute(choice, a, b)
             op_name = calc.menu_items[choice].name
-            symbol = "+" if op_name == "Add" else "-"
+            symbol = "+" if op_name == "Add" else "-" if op_name == "Subtract" else "/"
             print(f"Result: {a} {symbol} {b} = {result}")
         except Exception as e:
             print(f"Error: {e}")
