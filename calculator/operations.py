@@ -18,3 +18,9 @@ class Subtract(Operation):
 
     def execute(self, a: float, b: float) -> float:
         return a - b
+
+class Divide(Operation):
+    name = "Divide"
+
+    def execute(self, a: float, b: float) -> float:
+        return a / b
