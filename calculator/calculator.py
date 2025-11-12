@@ -1,5 +1,5 @@
 from typing import Dict, Type
-from .operations import Operation, Add, Subtract
+from .operations import Operation, Add, Subtract, Divide
 
 class Calculator:
     """
@@ -25,3 +25,4 @@ class Calculator:
         if key not in self._operations:
             raise KeyError(f"Unknown operation key: {key}")
         return self._operations[key].execute(a, b)
+rn self._operations[key].execute(a, b)
