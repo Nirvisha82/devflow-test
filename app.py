@@ -34,7 +34,7 @@ def main() -> None:
         try:
             result = calc.compute(choice, a, b)
             op_name = calc.menu_items[choice].name
-            symbol = "+" if op_name == "Add" else ("-" if op_name == "Subtract" else ("/" if op_name == "Divide" else ("*" if op_name == "Multiply" else "²")))
+            symbol = "+" if op_name == "Add" else ("-" if op_name == "Subtract" else ("/" if op_name == "Divide" else ("*" if op_name == "Multiply" else ("²" if op_name == "Square" else "^"))))
             print(f"Result: {a} {symbol} {b} = {result}")
         except Exception as e:
             print(f"Error: {e}")
