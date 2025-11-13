@@ -1,5 +1,5 @@
 from typing import Dict, Type
-from .operations import Operation, Add, Subtract, Divide, Multiply, Square, Power
+from .operations import Operation, Add, Subtract
 
 class Calculator:
     """
@@ -13,10 +13,6 @@ class Calculator:
     def _register_default_operations(self) -> None:
         self.register_operation("1", Add())
         self.register_operation("2", Subtract())
-        self.register_operation("3", Divide())
-        self.register_operation("4", Multiply())
-        self.register_operation("5", Square())
-        self.register_operation("6", Power())
 
     def register_operation(self, key: str, operation: Operation) -> None:
         self._operations[key] = operation

@@ -18,27 +18,3 @@ class Subtract(Operation):
 
     def execute(self, a: float, b: float) -> float:
         return a - b
-
-class Divide(Operation):
-    name = "Divide"
-
-    def execute(self, a: float, b: float) -> float:
-        return a / b
-
-class Multiply(Operation):
-    name = "Multiply"
-
-    def execute(self, a: float, b: float) -> float:
-        return a * b
-
-class Square(Operation):
-    name = "Square"
-
-    def execute(self, a: float, b: float) -> float:
-        return a * a + b * b
-
-class Power(Operation):
-    name = "Power"
-
-    def execute(self, a: float, b: float) -> float:
-        return a ** b
