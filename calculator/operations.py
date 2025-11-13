@@ -36,3 +36,9 @@ class Square(Operation):
 
     def execute(self, a: float, b: float) -> float:
         return a * a + b * b
+
+class Power(Operation):
+    name = "Power"
+
+    def execute(self, a: float, b: float) -> float:
+        return a ** b
