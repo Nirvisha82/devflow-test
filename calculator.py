@@ -1,5 +1,5 @@
 from typing import Dict, Type
-from .operations import Operation, Add, Subtract
+from operations import Operation, Add, Subtract
 
 class Calculator:
     """
