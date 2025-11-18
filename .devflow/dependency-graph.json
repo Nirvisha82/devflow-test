@@ -1,0 +1,58 @@
+{
+  "nodes": [
+    {
+      "file": ".gitignore",
+      "language": "",
+      "dependencies": [],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "file": "README.md",
+      "language": "markdown",
+      "dependencies": [],
+      "exports": [],
+      "imports": []
+    },
+    {
+      "file": "__init__.py",
+      "language": "python",
+      "dependencies": [],
+      "exports": [],
+      "imports": [
+        "Calculator",
+        "Operation,"
+      ]
+    },
+    {
+      "file": "app.py",
+      "language": "python",
+      "dependencies": [],
+      "exports": [],
+      "imports": [
+        "Calculator"
+      ]
+    },
+    {
+      "file": "calculator.py",
+      "language": "python",
+      "dependencies": [],
+      "exports": [],
+      "imports": [
+        "Dict,",
+        "Operation,"
+      ]
+    },
+    {
+      "file": "operations.py",
+      "language": "python",
+      "dependencies": [],
+      "exports": [],
+      "imports": [
+        "ABC,"
+      ]
+    }
+  ],
+  "generated_at": "2025-11-18T17:06:32.4515278-05:00",
+  "repo_url": ""
+}
