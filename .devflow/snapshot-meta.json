@@ -1,12 +1,9 @@
 {
-  "last_synced_sha": "4eff52e920179f3ed7efe8b8d57562be05732f76",
+  "last_synced_sha": "8c0fa1199438e9dc30dd934f053a9e7e3970bafb",
   "changed_files": [
-    ".devflow/README.md",
-    ".devflow/dependency-graph.json",
     ".devflow/devflow-commit.txt",
-    ".devflow/repo-analysis.md",
     ".devflow/repo-structure.md",
     ".devflow/snapshot-meta.json"
   ],
-  "created_at": "2025-11-18T22:26:46Z"
+  "created_at": "2025-11-18T22:27:32Z"
 }
